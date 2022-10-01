@@ -5,26 +5,27 @@ import com.scaspb.pp_2_3_1_html.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @Controller
 public class MyController {
 
-    @Autowired
-    private EmployeeService employeeService;
+    private final EmployeeService employeeService;
 
-    @RequestMapping(value = "/")
+    public MyController(EmployeeService employeeService) {
+        this.employeeService = employeeService;
+    }
+
+    @GetMapping(value = "/")
     public String showAllEmployees(Model model) {
         List<Employee> allEmployees = employeeService.getAllEmployees();
         model.addAttribute("allEmps", allEmployees);
         return "all-employees";
     }
 
-    @RequestMapping("/addNewEmployee")
+    @GetMapping("/addNewEmployee")
     public String addNewEmployee(Model model){
 
         Employee employee = new Employee();
@@ -32,20 +33,20 @@ public class MyController {
         return "employee-info";
     }
 
-    @RequestMapping("/saveEmployee")
+    @GetMapping(value = "/saveEmployee")
     public String saveEmployee(@ModelAttribute("employee") Employee employee){
         employeeService.saveEmployee(employee);
         return "redirect:/";
     }
 
-    @RequestMapping("/updateInfo")
+    @GetMapping(value = "/updateInfo")
     public String updateEmployee(@RequestParam("empID") int id, Model model) {
         Employee employee = employeeService.getEmployee(id);
         model.addAttribute("employee", employee);
         return "employee-info";
     }
 
-    @RequestMapping("/deleteEmployee")
+    @GetMapping("/deleteEmployee")
     public String deleteEmployee(@RequestParam("empID") int id) {
         employeeService.deleteEmployee(id);
         return "redirect:/";

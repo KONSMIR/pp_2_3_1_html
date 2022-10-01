@@ -1,32 +1,28 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Employee Info</title>
 </head>
 <body>
-<h2>Employee Info</h2>
 
-<form action="#" th:method="post" th:action="@{/saveEmployee}" th:object="${employee}">
+<form action="/saveEmployee"  th:object="${user}"  >
 
-    <input type="hidden" th:field="*{employee.id}"/>
+    <input type="hidden" th:field="*{id}"/>
 
-    <label for="name">Name: </label>
-    <input type="text" th:field="*{employee.name}" id="name"/>
-
-    <label for="surname">Name: </label>
-    <input type="text" th:field="*{employee.surname}" id="surname"/>
-
-    <label for="department">Name: </label>
-    <input type="text" th:field="*{employee.department}" id="department"/>
-
-    <label for="salary">Name: </label>
-    <input type="text" th:field="*{employee.salary}" id="salary"/>
-
-    <br/>
-    <input type="submit" value="OK">
+    <label for="name">Enter name: </label>
+    <input type="text" th:field="*{name}" id="name" placeholder="Name"/>
+    <br>
+    <label for="surname">Enter surname: </label>
+    <input type="text" th:field="*{surname}" id="surname" placeholder="Surname"/>
+    <br>
+    <label for="department">Enter department: </label>
+    <input type="text" th:field="*{department}" id="department" placeholder="Department"/>
+    <br>
+    <label for="salary">Enter salary: </label>
+    <input type="text" th:field="*{salary}" id="salary" placeholder="Salary"/>
+    <br>
+    <input type="submit" value="OK"/>
 
 </form>
 
