@@ -2,7 +2,6 @@ package com.scaspb.pp_2_3_1_html.controller;
 
 import com.scaspb.pp_2_3_1_html.model.Employee;
 import com.scaspb.pp_2_3_1_html.service.EmployeeService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -33,7 +32,7 @@ public class MyController {
         return "employee-info";
     }
 
-    @GetMapping(value = "/saveEmployee")
+    @RequestMapping(value = "/saveEmployee")
     public String saveEmployee(@ModelAttribute("employee") Employee employee){
         employeeService.saveEmployee(employee);
         return "redirect:/";

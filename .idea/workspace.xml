@@ -9,12 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3573a47a-7d64-4ba1-95d2-ec49b54e963d" name="Changes" comment="">
+    <list default="true" id="3573a47a-7d64-4ba1-95d2-ec49b54e963d" name="Changes" comment="Fix Delete service">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/scaspb/pp_2_3_1_html/controller/MyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scaspb/pp_2_3_1_html/controller/MyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/all-employees.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/all-employees.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/emloyee-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/emloyee-info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/emloyee-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/employee-info.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +71,9 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Constantine/IdeaProjects/pp_2_3_1_html/src/main/java/com/scaspb/pp_2_3_1_html/dao&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;3e03ece6fe4772b77e8bec9b36e9f82f&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -95,17 +98,17 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Tomcat 9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat 9.0.67" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.67" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="pp_2_3_1_html:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/pp_2_3_1_html" />
+            <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="25217fa5-ad00-4477-9b64-c81d6b52dfbc" />
+        <option name="BASE_DIRECTORY_NAME" value="6e630a66-829f-4175-a7dd-3b7ed5ed171f" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -113,7 +116,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="51162" />
+        <option name="DEBUG_PORT" value="64684" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -194,6 +197,9 @@
       <workItem from="1664456045876" duration="17809000" />
       <workItem from="1664513831341" duration="176000" />
       <workItem from="1664540291018" duration="12837000" />
+      <workItem from="1664655448511" duration="222000" />
+      <workItem from="1664803200881" duration="4582000" />
+      <workItem from="1664812017835" duration="4099000" />
     </task>
     <task id="LOCAL-00001" summary="Fix Delete service">
       <created>1664513889986</created>
@@ -207,6 +213,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fix Delete service" />
